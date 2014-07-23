@@ -590,7 +590,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 
 def play_tournament(num_players):
     #create a list of zeros, one per player
-    print ("Let The Tournament Begin")
+    print ("Let The Tournament Begin, good luck")
     
     scores = []
     for i in range(num_players):
