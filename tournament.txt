@@ -1,8 +1,20 @@
 team 1 vs. team 0
 100 vs. -500
 backstabber vs. loyal
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+team 2 vs. team 0
+0 vs. 0
+loyal vengeful vs. loyal
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+team 2 vs. team 1
+-377 vs. -74
+loyal vengeful vs. backstabber
+cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 
 
@@ -10,16 +22,18 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 	Each column shows score earned per round against each other player.
 
 
-	P0	P1	
-P0	0	100	
-P1	-500	0	
-Total:	-500	100	
+	P0	P1	P2	
+P0	0	100	0	
+P1	-500	0	-377	
+P2	0	-74	0	
+Total:	-500	26	-376	
 
 
  Average per round, with team strategy names:
 
-player 0: -250 points: loyal
-player 1: 50 points: backstabber
+player 0: -167 points: loyal
+player 1: 8 points: backstabber
+player 2: -126 points: loyal vengeful
 
 
 -------------------------------------------------------------------------------
@@ -618,6 +632,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 def play_tournament(num_players):
     #create a list of zeros, one per player
     print ("Let The Tournament Begin")
+    print ("May The best man win")
     scores = []
     for i in range(num_players):
         scores += [0]
