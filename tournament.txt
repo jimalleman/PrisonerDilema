@@ -1,3 +1,30 @@
+team 1 vs. team 0
+100 vs. -500
+backstabber vs. loyal
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+
+
+
+	Each column shows score earned per round against each other player.
+
+
+	P0	P1	
+P0	0	100	
+P1	-500	0	
+Total:	-500	100	
+
+
+ Average per round, with team strategy names:
+
+player 0: -250 points: loyal
+player 1: 50 points: backstabber
+
+
+-------------------------------------------------------------------------------
+Here is the code that produced this data:
+
 from __future__ import print_function
 
 ''' 
